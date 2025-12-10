@@ -1,0 +1,138 @@
+2025-12-09 18:10:50,160 - __main__ - INFO - Starting solver for: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 18:10:50,160 - src.problem.problem - INFO - Loading problem: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 18:10:50,271 - src.problem.problem - INFO - Loaded 111 pickups, 3 other locations, 3 vehicles
+2025-12-09 18:10:50,271 - __main__ - INFO - Trying initial solution strategy: 1
+2025-12-09 18:10:50,271 - __main__ - ERROR - Error: First node must be a starting site
+Traceback (most recent call last):
+  File "C:\python_venv\vrp\trash_collection_py\src\main.py", line 49, in main
+    tp.process(icase)
+    ~~~~~~~~~~^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\initialization\initial_solver.py", line 68, in process
+    self._strategy1()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\python_venv\vrp\trash_collection_py\src\initialization\initial_solver.py", line 97, in _strategy1
+    if self.safe_insert_node(trip, node, pos):
+       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\initialization\basic_operations.py", line 45, in safe_insert_node
+    trip.evaluate()
+    ~~~~~~~~~~~~~^^
+  File "C:\python_venv\vrp\trash_collection_py\src\solution\vehicle.py", line 37, in evaluate
+    self.path.evaluate(0, self.max_capacity)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\base_classes\tw_node.py", line 409, in evaluate
+    self.path[i].evaluate(max_capacity)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\problem\trash_node.py", line 210, in evaluate
+    self._evaluate_start(cargo_limit)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\problem\trash_node.py", line 218, in _evaluate_start
+    raise ValueError("First node must be a starting site")
+ValueError: First node must be a starting site
+2025-12-09 18:27:50,884 - __main__ - INFO - Starting solver for: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 18:27:50,884 - src.problem.problem - INFO - Loading problem: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 18:27:50,953 - src.problem.problem - INFO - Loaded 111 pickups, 3 other locations, 3 vehicles
+2025-12-09 18:27:50,954 - __main__ - INFO - Trying initial solution strategy: 1
+2025-12-09 18:27:50,954 - __main__ - ERROR - Error: First node must be a starting site
+Traceback (most recent call last):
+  File "C:\python_venv\vrp\trash_collection_py\src\main.py", line 49, in main
+    tp.process(icase)
+    ~~~~~~~~~~^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\initialization\initial_solver.py", line 68, in process
+    self._strategy1()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\python_venv\vrp\trash_collection_py\src\initialization\initial_solver.py", line 97, in _strategy1
+    if self.safe_insert_node(trip, node, pos):
+       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\initialization\basic_operations.py", line 45, in safe_insert_node
+    trip.evaluate()
+    ~~~~~~~~~~~~~^^
+  File "C:\python_venv\vrp\trash_collection_py\src\solution\vehicle.py", line 37, in evaluate
+    self.path.evaluate(0, self.max_capacity)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\base_classes\tw_node.py", line 409, in evaluate
+    self.path[i].evaluate(max_capacity)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\problem\trash_node.py", line 210, in evaluate
+    self._evaluate_start(cargo_limit)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\problem\trash_node.py", line 218, in _evaluate_start
+    raise ValueError("First node must be a starting site")
+ValueError: First node must be a starting site
+2025-12-09 18:41:10,253 - __main__ - INFO - Starting solver for: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 18:41:10,254 - src.problem.problem - INFO - Loading problem: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 18:41:10,339 - src.problem.problem - INFO - Loaded 111 pickups, 3 other locations, 3 vehicles
+2025-12-09 18:41:10,339 - __main__ - INFO - Trying initial solution strategy: 1
+2025-12-09 18:41:10,339 - __main__ - ERROR - Error: 'float' object has no attribute 'nid'
+Traceback (most recent call last):
+  File "C:\python_venv\vrp\trash_collection_py\src\main.py", line 49, in main
+    tp.process(icase)
+    ~~~~~~~~~~^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\initialization\initial_solver.py", line 94, in process
+    self._strategy1()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\python_venv\vrp\trash_collection_py\src\initialization\initial_solver.py", line 123, in _strategy1
+    if self.safe_insert_node(trip, node, pos):
+       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\initialization\basic_operations.py", line 45, in safe_insert_node
+    trip.evaluate()
+    ~~~~~~~~~~~~~^^
+  File "C:\python_venv\vrp\trash_collection_py\src\solution\vehicle.py", line 37, in evaluate
+    self.path.evaluate(0, self.max_capacity)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\base_classes\tw_node.py", line 413, in evaluate
+    self.path[i].evaluate(self.path[i - 1], max_capacity)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\problem\trash_node.py", line 213, in evaluate
+    self._evaluate_with_pred(pred, cargo_limit)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\problem\trash_node.py", line 243, in _evaluate_with_pred
+    self._travel_time = get_travel_time(pred.nid, self.nid)
+                                        ^^^^^^^^
+AttributeError: 'float' object has no attribute 'nid'
+2025-12-09 19:46:24,839 - __main__ - INFO - Starting solver for: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 19:46:24,839 - src.problem.problem - INFO - Loading problem: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 19:46:24,920 - src.problem.problem - INFO - Loaded 111 pickups, 3 other locations, 3 vehicles
+2025-12-09 19:46:24,921 - __main__ - INFO - Trying initial solution strategy: 1
+2025-12-09 19:46:24,963 - __main__ - INFO - Strategy 1 is best with cost: 0.0
+2025-12-09 19:46:24,963 - src.problem.problem - INFO - Loading problem: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 19:46:25,034 - src.problem.problem - INFO - Loaded 111 pickups, 3 other locations, 3 vehicles
+2025-12-09 19:46:25,034 - __main__ - INFO - Trying initial solution strategy: 2
+2025-12-09 19:46:25,073 - __main__ - INFO - Trying initial solution strategy: 3
+2025-12-09 19:46:25,110 - __main__ - INFO - Trying initial solution strategy: 4
+2025-12-09 19:46:25,148 - __main__ - INFO - Trying initial solution strategy: 5
+2025-12-09 19:46:25,188 - __main__ - INFO - Trying initial solution strategy: 6
+2025-12-09 19:46:25,226 - __main__ - INFO - Trying initial solution strategy: 7
+2025-12-09 19:46:25,265 - __main__ - INFO - Starting optimization...
+2025-12-09 19:46:25,265 - src.problem.problem - INFO - Loading problem: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 19:46:25,331 - src.problem.problem - INFO - Loaded 111 pickups, 3 other locations, 3 vehicles
+2025-12-09 19:46:25,331 - __main__ - INFO - Best solution cost: 0.0
+2025-12-09 19:46:25,331 - __main__ - INFO - Fleet size: 3
+2025-12-09 19:46:25,331 - __main__ - INFO - Pickups: 9
+2025-12-09 19:46:25,334 - __main__ - ERROR - Error: 'NodeType' object is not callable
+Traceback (most recent call last):
+  File "C:\python_venv\vrp\trash_collection_py\src\main.py", line 73, in main
+    best_sol.save_to_file(output_file)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\python_venv\vrp\trash_collection_py\src\solution\solution.py", line 157, in save_to_file
+    node_type = node.type()
+TypeError: 'NodeType' object is not callable
+2025-12-09 19:49:39,491 - __main__ - INFO - Starting solver for: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 19:49:39,491 - src.problem.problem - INFO - Loading problem: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 19:49:39,560 - src.problem.problem - INFO - Loaded 111 pickups, 3 other locations, 3 vehicles
+2025-12-09 19:49:39,561 - __main__ - INFO - Trying initial solution strategy: 1
+2025-12-09 19:49:39,606 - __main__ - INFO - Strategy 1 is best with cost: 0.0
+2025-12-09 19:49:39,606 - src.problem.problem - INFO - Loading problem: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 19:49:39,673 - src.problem.problem - INFO - Loaded 111 pickups, 3 other locations, 3 vehicles
+2025-12-09 19:49:39,673 - __main__ - INFO - Trying initial solution strategy: 2
+2025-12-09 19:49:39,711 - __main__ - INFO - Trying initial solution strategy: 3
+2025-12-09 19:49:39,748 - __main__ - INFO - Trying initial solution strategy: 4
+2025-12-09 19:49:39,785 - __main__ - INFO - Trying initial solution strategy: 5
+2025-12-09 19:49:39,823 - __main__ - INFO - Trying initial solution strategy: 6
+2025-12-09 19:49:39,862 - __main__ - INFO - Trying initial solution strategy: 7
+2025-12-09 19:49:39,900 - __main__ - INFO - Starting optimization...
+2025-12-09 19:49:39,900 - src.problem.problem - INFO - Loading problem: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02
+2025-12-09 19:49:39,977 - src.problem.problem - INFO - Loaded 111 pickups, 3 other locations, 3 vehicles
+2025-12-09 19:49:39,978 - __main__ - INFO - Best solution cost: 0.0
+2025-12-09 19:49:39,978 - __main__ - INFO - Fleet size: 3
+2025-12-09 19:49:39,978 - __main__ - INFO - Pickups: 9
+2025-12-09 19:49:39,979 - __main__ - INFO - Solution saved to: C:/python_venv/VRP/trash-collection/src/tests/c_du_rm_cl_02.sol.txt
