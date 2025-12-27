@@ -4,6 +4,8 @@ Refactorización del código C++ de recolección de basura municipal a Python.
 
 ## Descripción
 
+nuevo texto
+
 Este proyecto implementa un sistema de enrutamiento de vehículos (VRP) para la recolección de basura municipal. El sistema utiliza heurísticas de optimización para encontrar rutas eficientes para una flota de vehículos que deben recolectar basura de contenedores y llevarla a vertederos.
 
 ## Estructura del Proyecto
